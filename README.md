@@ -1,4 +1,4 @@
-# lock-manager-f520a9
+# lock-manager-bdd15a
 
 A Go lock manager utility.
 

